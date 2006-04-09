@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE refactor PUBLIC "-//Borland Software Corporation//Refactor 1.0//EN" "http://www.borland.com/devsupport/jbuilder/dtds/refactor_1_0.dtd">
+<refactor>
+  <rename-class id="W9P0FNG1NC6EDYIW6231QKH0" creation-time="Tue Mar 15 22:49:08.609 CET 2005">
+    <old-class-name>appletrecherche.Recherche</old-class-name>
+    <new-class-name>appletrecherche.AppletRecherche</new-class-name>
+  </rename-class>
+  <rename-method id="09P0BHRNNC6E05NP2231QKH0" creation-time="Tue Mar 15 23:20:44.453 CET 2005">
+    <declaring-class-name>appletrecherche.AppletRecherche</declaring-class-name>
+    <declared-method-signature>(Ljava/awt/event/ActionEvent;)V</declared-method-signature>
+    <old-method-name>jButton1_actionPerformed</old-method-name>
+    <new-method-name>boutonRecherche_actionPerformed</new-method-name>
+  </rename-method>
+  <rename-class id="Y8P0BHRNNC6E05NP2231QKH0" creation-time="Tue Mar 15 23:21:03.562 CET 2005">
+    <old-class-name>appletrecherche.Recherche_jButton1_actionAdapter</old-class-name>
+    <new-class-name>appletrecherche.Recherche_boutonRecherche_actionAdapter</new-class-name>
+  </rename-class>
+  <rename-field id="6AP0RJJJPG6EF3LD231QKH0" creation-time="Fri Mar 18 19:09:12.531 CET 2005">
+    <declaring-class-name>appletrecherche.AppletRecherche</declaring-class-name>
+    <old-field-name>_allWords</old-field-name>
+    <declared-field-type>Ljavax/swing/JTextField;</declared-field-type>
+    <new-field-name>_champRecherche</new-field-name>
+  </rename-field>
+</refactor>
