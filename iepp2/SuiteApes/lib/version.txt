@@ -1,0 +1,39 @@
+2xmi.jar
+2XMI version 1.4
+
+jgraph.jar
+JGraph Lucerne (v3.0)
+
+ipsquad-2.5.1.jar
+librairie APES2 v2.5.2
+
+JSX.jar
+JSX0.9.8.2 (13 February 2002)
+______
+
+pour le code HTML et PDF :
+Tidy.jar
+JTidy version 04aug2000r7-dev
+______
+
+pour le PDF :
+fop.jar
+fop-0.20.5
+
+avalon-framework-4.2.0.jar
+avalon framework-4.2.0
+
+JimiProClasses.zip
+jimi 1.0
+
+batik-1.5.1.jar
+batik 1.5.1 (only batik)
+______
+
+pour le Moteur de recherche :
+lucene-1.4.3.jar
+lucene 1.4.3
+______
+
+
+
