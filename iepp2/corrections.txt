@@ -1,0 +1,41 @@
+Référentiel des corrections :
+Ce document ne contient pas les exigences,
+mais seulement les bugs remarqués et quelques modifications demandées.
+
+NC : signifie non corrigé
+__ : signifie corrigé (validation du chef de projet)
+AVnom : trouvé par "nom", mais à valider par le chef de projet
+Indiquer votre nom entre -- (-Nom-) lorsque vous avez corrigé.
+
+BUGs :
+__B01 -Gaston- dans liste_produit/produit, entreeActivite peut être dans un autre composant s'il y a fusion
+__B02 -Jean- dans liste_composant/composant, produitId peut être dans un autre composant s'il y a fusion
+__B03 -Delete- supprimer le fichier dpe temporaire utilisé pour l'export du fichier xmi, dès que l'export est fini
+NCB04 -Mhamedi- L'utilisation de la librairie FOP dans la méthode de transformation dans twoxmi.utils.Utilitaire engendre une exception alors que le renderer est bien positionné
+__B05 -Jean- dans le DPC, les chemins dans processus.xmi ne sont pas les mêmes que dans processus.dpe
+__B06 -Gaston- dans le classpath de env_suite.bat, si batik (plus précisément le jar lib/batik-1.5.1/lib/pdf-transcoder.jar) est placé avant fop, iepp sort un pdf à 0 octet.
+__B07 -Gaston- dans le classpath de env_suite.bat, si batik (plus précisément le jar lib/batik-1.5.1/lib/xerces_2_5_0.jar) y est, iepp ne sait plus parser (erreur chemin d'icones).
+__B08 -Rene- le premier PDF généré dans IEPP reste en mémoire et donc ce même PDF sort tout le temps durant la session: solution nouveau dossier date systeme
+NCB09 -- si le path de l'application de IEPP contient des accents, le PDF ne peut être utilisé (cause possible : librairies pour le PDF)
+__B10 -Jean- l'icone associé à un paquetage de présentation est référencé dans le XMI dans un dossier applet/images/Icone/ alors qu'il se trouve dans applet/images/ cette icone n'apparait donc pas de pdf pour le moment
+__B11 -Sanmartin- Le répertoire par défaut de l'exportation n'est pas pris en compte
+__B12 -Mounasser- On peut changer le nom d'un composant non vide
+__B13 -Sanmartin- Même si on renomme (dans Iepp) une définition de processus, son identifiant (normalement basé sur son nom) ne change pas dans l'export -ce n'est peut-être pas un problème-
+NCB14 -- Quand on annule une actualisation, le composant disparait du diagramme
+NCB15 -- Quand on actualise un composant qui est en fusion avec d'autres composants, le fichier xmi n'est pas valide
+NCB16 -Mhamedi- Quand on actualise un paquetage de présentation, le message de confirmation de suppreesion ne doit pas apparaître
+__B17 -??-Quand on actualise un paquetage de présentation, le xmi n'est plus valide
+__B18 -??-Quand on actualise un paquetage de présentation, celui-ci apparaît deux fois dans l'arbre de génération du site
+__B20 -Jean- Les produits avec état n'étaient pas cliquables dans le site web. Un NULL POINTER EXCEPTION apparaît quand on génère le site web. Les exports ne sont pas possibles.
+NCB21 Quand on actualise avec un mauvais composant, celui-ci est ajouté au référentiel
+NCB22 Quand on actualise un composant, il arrive qu'un message disant que le composant qu'on veut ajouté n'a pas le même nom que le composant initial. Cela ne doit aps se produire quand ona joute le même composant
+NCB23 Un composant actualisé se retire de la définition de processus mais pas du diagramme
+
+Autres modifications :
+__M01 -Nouhen- L'export xmi ne dit pas qu'un fichier de même nom existe déjà avant de l'écraser
+__M02 -Nouhen- Dans le message "le fichier existe deja ..". il manque les accents sur déjà
+NCM03 L'actualisation d'un paquetage pourrait implémenter la version
+__M04 -Nouhen- Dans le message "This file already exists, do you want to delete it?" "delete" n'est pas une traduction fidèle mais "overwrite" semble être plus approprié
+NCM05 -Mhamedi- Quand on annule l'export au format xmi, ne pas afficher le message "L'export xmi a échoué"
+
+AVJean Virer les System.out.err

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>lucene_lib</fullname>
+  <class>
+    <path>[SuiteApes/lib/lucene-1.4.3.jar]</path>
+  </class>
+  <lastmodsaved>1111090968261</lastmodsaved>
+</library>

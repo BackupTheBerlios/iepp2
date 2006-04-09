@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>jimi_lib</fullname>
+  <class>
+    <path>[SuiteApes/lib/JimiProClasses.zip]</path>
+  </class>
+  <lastmodsaved>1108514059734</lastmodsaved>
+</library>

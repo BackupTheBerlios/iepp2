@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>batik_lib</fullname>
+  <class>
+    <path>[SuiteApes/lib/batik-1.5.1.jar]</path>
+  </class>
+  <lastmodsaved>1109975744088</lastmodsaved>
+</library>

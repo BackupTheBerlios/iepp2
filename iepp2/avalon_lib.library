@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>avalon_lib</fullname>
+  <class>
+    <path>[SuiteApes/lib/avalon-framework-4.2.0.jar]</path>
+  </class>
+  <lastmodsaved>1109975323674</lastmodsaved>
+</library>

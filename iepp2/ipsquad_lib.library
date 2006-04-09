@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>ipsquad_lib</fullname>
+  <class>
+    <path>[SuiteApes/lib/ipsquad-2.5.2.jar]</path>
+  </class>
+  <lastmodsaved>1128869574739</lastmodsaved>
+</library>

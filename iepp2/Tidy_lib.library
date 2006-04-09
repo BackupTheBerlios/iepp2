@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>Tidy_lib</fullname>
+  <class>
+    <path>[SuiteApes/lib/Tidy.jar]</path>
+  </class>
+  <lastmodsaved>1107996296176</lastmodsaved>
+</library>

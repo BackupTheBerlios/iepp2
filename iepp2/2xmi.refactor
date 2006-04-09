@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE refactor PUBLIC "-//Borland Software Corporation//Refactor 1.0//EN" "http://www.borland.com/devsupport/jbuilder/dtds/refactor_1_0.dtd">
+<refactor>
+  <rename-class id="6AP0DE2GEI5EH2866CGT70N" creation-time="Tue Feb 22 18:54:24.609 CET 2005">
+    <old-class-name>twoxmi.utils.Logger</old-class-name>
+    <new-class-name>twoxmi.utils.Tracer</new-class-name>
+  </rename-class>
+  <rename-field id="8DN7NAM226E2AIWA231QKH0" creation-time="Tue Mar 08 17:32:33.890 CET 2005">
+    <declaring-class-name>iepp.application.CExporterProcessusPDF</declaring-class-name>
+    <old-field-name>listeErreurs</old-field-name>
+    <declared-field-type>Ljava/util/Vector;</declared-field-type>
+    <new-field-name>listeMessages</new-field-name>
+  </rename-field>
+  <rename-method id="ADN7NAM226E2AIWA231QKH0" creation-time="Tue Mar 08 17:58:54.218 CET 2005">
+    <declaring-class-name>iepp.application.CExporterProcessusPDF</declaring-class-name>
+    <declared-method-signature>()V</declared-method-signature>
+    <old-method-name>afficheListeErreurs</old-method-name>
+    <new-method-name>afficheListeMessages</new-method-name>
+  </rename-method>
+  <rename-method id="Z3O0GXS7LA6E6XLNF231QKH0" creation-time="Mon Mar 14 12:27:16.156 CET 2005">
+    <declaring-class-name>iepp.domaine.DefinitionProcessus</declaring-class-name>
+    <declared-method-signature>()V</declared-method-signature>
+    <old-method-name>creerPiedPage</old-method-name>
+    <new-method-name>creerPiedPageVide</new-method-name>
+  </rename-method>
+</refactor>
