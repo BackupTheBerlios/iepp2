@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns="http://2xmi.free.fr" targetNamespace='http://2xmi.free.fr'>
+    <xsd:import namespace="http://www.omg.org/XMI" schemaLocation="xmi20.xsd"/>
+
+    <xsd:annotation>
+        <xsd:documentation>
+            Commun
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="elementPresentationId">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="agregatComposant">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:annotation>
+        <xsd:documentation>
+            Type Guide
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="typeGuide">
+        <xsd:complexType>
+            <xsd:attribute ref="xmi:id" use="required"/>
+            <xsd:attribute name="nom" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:annotation>
+        <xsd:documentation>
+            Guide
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="typeGuideId">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="guide">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="typeGuideId"/>
+                <xsd:element ref="elementPresentationId"/>
+            </xsd:sequence>
+            <xsd:attribute ref="xmi:id" use="required"/>
+            <xsd:attribute name="nom" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:annotation>
+        <xsd:documentation>
+            Element Presentation
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="guideId">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="elementPresentation">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="guideId" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attribute ref="xmi:id" use="required"/>
+            <xsd:attribute name="nom" use="optional"/>
+            <xsd:attribute name="cheminIcone" use="optional"/>
+            <xsd:attribute name="cheminContenu" use="optional"/>
+            <xsd:attribute name="description" use="optional"/>
+            <xsd:attribute name="cheminPage" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:annotation>
+        <xsd:documentation>
+            Paquetage Presentation
+        </xsd:documentation>
+    </xsd:annotation>
+
+     <xsd:element name="agregeElementPresentation">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="paquetagePresentation">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="agregeElementPresentation" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="elementPresentationId"/>
+            </xsd:sequence>
+            <xsd:attribute ref="xmi:id" use="required"/>
+            <xsd:attribute name="nom" use="optional"/>
+            <xsd:attribute name="dossierIcone" use="optional"/>
+            <xsd:attribute name="dossierContenu" use="optional"/>
+            <xsd:attribute name="ordreGeneration" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:annotation>
+        <xsd:documentation>
+            Etat
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="etat">
+        <xsd:complexType>
+            <xsd:attribute ref="xmi:id" use="required"/>
+            <xsd:attribute name="nom" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:annotation>
+        <xsd:documentation>
+            Type Produit
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="typeProduit">
+        <xsd:complexType>
+            <xsd:attribute ref="xmi:id" use="required"/>
+            <xsd:attribute name="nom" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:annotation>
+        <xsd:documentation>
+            Interface
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="interfaceRequiseComposant">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="interfaceFournieComposant">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="interfaceProduit">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="interface">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="interfaceRequiseComposant" minOccurs="0"/>
+                <xsd:element ref="interfaceFournieComposant" minOccurs="0"/>
+                <xsd:element ref="interfaceProduit" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attribute ref="xmi:id" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:annotation>
+        <xsd:documentation>
+            Activite
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="participationRole">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="agregatDefinitionTravail">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="entreeProduit">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="sortieProduit">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="activite">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="participationRole" minOccurs="0"/>
+                <xsd:element ref="agregatDefinitionTravail"/>
+                <xsd:element ref="entreeProduit" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="sortieProduit" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="elementPresentationId"/>
+            </xsd:sequence>
+            <xsd:attribute ref="xmi:id" use="required"/>
+            <xsd:attribute name="nom" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:annotation>
+        <xsd:documentation>
+            Definition de travail
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="activiteId">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="definitionTravail">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="agregatComposant"/>
+                <xsd:element ref="activiteId" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="elementPresentationId"/>
+            </xsd:sequence>
+            <xsd:attribute ref="xmi:id" use="required"/>
+            <xsd:attribute name="nom" use="optional"/>
+            <xsd:attribute name="cheminDiagrammeActivites" use="optional"/>
+            <xsd:attribute name="cheminDiagrammeFlots" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:annotation>
+        <xsd:documentation>
+            Produit
+        </xsd:documentation>
+    </xsd:annotation>
+
+     <xsd:element name="responsabiliteRole">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="typeProduitId">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="interfaceId">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="etatId">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="entreeActivite">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="sortieActivite">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="produit">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="agregatComposant"/>
+                <xsd:element ref="responsabiliteRole" minOccurs="0"/>
+                <xsd:element ref="typeProduitId" minOccurs="0"/>
+                <xsd:element ref="interfaceId" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="etatId" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="entreeActivite" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="sortieActivite" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="elementPresentationId" minOccurs="0"/>
+            </xsd:sequence>
+            <xsd:attribute ref="xmi:id" use="required"/>
+            <xsd:attribute name="nom" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:annotation>
+        <xsd:documentation>
+            Role
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="responsabiliteProduit">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="participationActivite">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="role">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="agregatComposant"/>
+                <xsd:element ref="responsabiliteProduit" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="participationActivite" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="elementPresentationId"/>
+            </xsd:sequence>
+            <xsd:attribute ref="xmi:id" use="required"/>
+            <xsd:attribute name="nom" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:annotation>
+        <xsd:documentation>
+            Composant
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="roleId">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="produitId">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="definitionTravailId">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="interfaceRequise">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="interfaceFournie">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="diagrammeResponsabilites">
+      <xsd:complexType>
+        <xsd:attribute name="cheminDiagramme">
+        </xsd:attribute>
+      </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="composant">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="roleId" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="produitId" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="definitionTravailId" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="interfaceRequise" minOccurs="0"/>
+                <xsd:element ref="interfaceFournie" minOccurs="0"/>
+                <xsd:element ref="diagrammeResponsabilites" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="elementPresentationId"/>
+            </xsd:sequence>
+            <xsd:attribute ref="xmi:id" use="required"/>
+            <xsd:attribute name="nom" use="optional"/>
+            <xsd:attribute name="version" use="optional"/>
+            <xsd:attribute name="nomAuteur" use="optional"/>
+            <xsd:attribute name="emailAuteur" use="optional"/>
+            <xsd:attribute name="datePlacement" use="optional"/>
+            <xsd:attribute name="description" use="optional"/>
+            <xsd:attribute name="cheminDiagrammeInterfaces" use="optional"/>
+            <xsd:attribute name="cheminDiagrammeFlots" use="optional"/>
+            <xsd:attribute name="ordreGeneration" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:annotation>
+        <xsd:documentation>
+            Processus
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="composantId">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="paquetagePresentationId">
+        <xsd:complexType>
+            <xsd:attributeGroup ref="xmi:LinkAttribs"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="processus">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="composantId" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="paquetagePresentationId" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attribute ref="xmi:id" use="required"/>
+            <xsd:attribute name="nom" use="optional"/>
+            <xsd:attribute name="nomAuteur" use="optional"/>
+            <xsd:attribute name="emailAuteur" use="optional"/>
+            <xsd:attribute name="description" use="optional"/>
+            <xsd:attribute name="piedPage" use="optional"/>
+            <xsd:attribute name="cheminGeneration" use="optional"/>
+            <xsd:attribute name="dateExport" use="optional"/>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

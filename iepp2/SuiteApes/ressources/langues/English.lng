@@ -1,0 +1,549 @@
+# @(#)english.lng
+#
+# Iepp English traduction
+
+
+# Application Menu
+# clé dans la table = valeur
+Fichier=File
+Nouveau=New Process
+Nouveau_referentiel=New Project
+Ouvrir_proj=Open a project...
+Ouvrir_proc=Open a process...
+Fermer=Close
+Sauver=Save Process
+SauverSous=Save Process As
+Export=Export
+ExporterDPE=Simple Process
+ExporterDPC=Complete Process
+ExporterXMI=as XMI
+ExporterPDF=PDF
+Quitter=Exit
+Affichage=Display
+Preferences=Preferences
+Edition=Edition
+Reduire=Zoom out
+Agrandir=Zoom in
+Outils=Generation
+Langues=Language
+Aide=Help
+Propos=About...
+
+#Sous-Menu d'edition
+Annuler=Cancel
+Refaire=Redo
+Supprimer=Delete
+Masquer=Hide
+
+#Sous-Menu Outils
+Valider_le_projet=Check the project
+Generer_le_site_Web=Web site
+Export_rapide=Export
+
+#Dialog Box
+BD_NVX_PROC_SUPRR_ANC=You are opening a new process, the current process will be delete. Do you want to proceed ?
+BD_OUV_PROC_SUPRR_ANC=You are opening an existing process, the current process will be delete. Do you want to proceed ?
+BD_NVX_REF_SUPRR_ANC=You are opening a new project, the current process will be delete. Do you want to proceed ?
+BD_SAUV_AVAT_OUVRIR=Do you want to save the current process before opening?
+BD_SAUV_AVAT_CREER=Do you want to save the current process before creating a new one?
+BD_SAUV_AVAT_CREER_REF=You are creating a new project, the current process will be delete. Do you want to save it ?
+BD_SAUV_AVAT_OUVRIR_REF=You are opening a new project, the current process will be delete. Do you want to save it ?
+BD_SAUV_AVAT_FERMER=Do you want to save the current process before closing?
+BD_ATTENTE_OUVRIR_PROJET=You are opening a new project, add the files wished in the root of your new project.
+Confirmation=Confirmation
+OK=Ok
+Annuler=Cancel
+Appliquer=Apply
+Choisir_Dossier=Choose directory
+msgSauvegarde=Save
+msgConfirmEcrasement=This file already exists, do you want to overwrite it?
+Chargement=Loading...
+FusionName=Name of fusion product
+FusionRename=Rename fusion product
+Valider=Finish
+Suivant=Next >
+BD_SUPP_COMP_REF=This will definitely delete the component. Do you want to proceed ?
+BD_SUPP_DP_REF=This will definitely delete the process. Do you want to proceed ?
+BD_SUPP_PRES_REF=This will definitely delete the presentation package. Do you want to proceed ?
+BD_CONF_SUPPR_COMP=WARNING ! This component will be removed from current process.
+Composants_Publiables=Publishable components
+Presentations=Presentation packages
+Generation_ok=Web site successfully generated. Would you like ti show it ?
+Generation_XHTML_Non_ok=Web site successfully generated.\nSome content files are wrong .\nThey will not be exported in PDF format.
+Generation_site_titre=Web site generation
+Composants_pub_vides=Publishable components & Empty components
+projet_valide=Your project has been validated
+bouton_details=Details
+
+# Errors
+ERR_INSTANCE_EXISTANTE=this application is already running
+ERR_Imprimante=Error while printing
+ERR=Error
+ERR_Export=Can't export diagram
+ERR_Fichier_Non_Trouve=Can't find this file
+ERR_Non_Composant=This file does not contain a publishable component.
+ERR_Non_Presentation=This file does not contain a presentation package.
+ERR_Component_Non_Trouve=This file is not a publishable component. The Component.xml file is not in the .apes file.
+ERR_Interface_Non_Trouve=This file is not a publishable component. The Interfaces.xml file is not in the .apes file.
+ERR_Presentation_Non_Trouve=This file is not a publishable component. The Presentation.xml file is not in the .apes file.
+ERR_Component_Trouve=This file is not a presentation package. The Component.xml file must not be in the .apes file.
+ERR_Interface_Trouve=This file is not a presentation package. The Interfaces.xml file  must not be in the .apes file.
+ERR_Presentation_Pas_Trouve=This file is not a presentation package. The Presentation.xml file is not in the .apes file.
+ERR_Pas_Repertoire=The file is not a directory
+ERR_Impos_Creer_Rep=Unable to create directory
+ERR_Rep_Source_Non_Trouve=Source directory doesn't exist
+ERR_Rep_Dest_Non_Trouve=Target directory doesn't exist
+ERR_Fichier_DP_Non_Trouve=The DefinitionProcessus.xml file is missing. Can't open the chosen process.
+ERR_Fichier_DP_Corrompu=This save file is corrupted. Can't open the chosen process.
+ERR_Composant_Present=This component is already in the assembly diagram.
+ERR_Composant_Deja_DP=This component is already in the process.
+ERR_Composant_Dyn_Pas_Statique_DP=This component can't be added to the diagram. It isn't in the current process.
+ERR_SUP_REF_ED=Unable to delete a component being edited.
+ERR_Composant_Supprimer_partie1=The component
+ERR_Composant_Supprimer_partie2=has been removed from the project. It will now be removed from the current process definition.
+ERR_Presentation_Supprimer_partie1=The presentation package
+ERR_Presentation_Supprimer_partie2=has been removed from the project. It will now be removed from the current process definition.
+
+ERR_Ann_CP_separ=Unable to undo the action: separator not found
+ERR_Ann_CP_param=Unable to undo the action: parameter not found
+ERR_Nom_Proc_Incorrect=A process name can't contain one of the following characters : \n \/:*?"<>|+
+ERR_Nom_Scen_Incorrect=A scenario name can't contain one of the following characters : \n \/:*?"<>|+
+ERR_Nom_Scen_Existe=The name of this scenario is already use !
+ERR_Nom_Ref_Incorrect=A project name can't contain one of the following characters : \n \/:*?"<>|+
+ERR_AucuneDP=No process has been recorded in this project.
+ERR_DpInexistante=The specified process does not exist !
+ERR_Fic_Ref_Corromp=This project file is corrupted.
+ERR_Fic_Ref_Maj2_0=The project that you wish to charge is in old format 1.0. \nYou must convert the project into 2.0 format. \n\nPlease download the patch\n\thttp:\/\/2xmi.free.fr/patch/patch_ref2_0.jar \nand run it to convert the ref file .ref. \nIf you do not apply this patch, the project will not be charged.
+ERR_Composant_Deja=This component is already in the project
+ERR_Presentation_Deja=This package is already in the project
+ERR_Processus_Deja=This process is already in the project
+ERR_Nom_Vers_Incorrect=The component's version number can be composed of the maximum of 6 digits.
+ERR_Composant_XHTML=Component
+ERR_Activite_XHTML=Activity
+ERR_Definition_Travail_XHTML=Work definition
+ERR_Produit_XHTML=Product
+ERR_Element_XHTML=Element
+ERR_Role_XHTML=Role
+ERR_Code_HTML_titre=Errors in HTML code in contents
+ERR_Code_HTML=HTML files of contents of these elements are wrong :\n
+ERR_PDF_titre=Log of pdf generation
+ERR_PDF=Details on generated pages :
+ERR_Coherence_Actualisation_Composant=Caution, the selected component's name differs from the initial one
+ERR_FichierProtegeEnEcriture=File you would like replace is write protected
+ERR_ChargeurPresentation1=This save file
+ERR_ChargeurPresentation2=is corrupted.
+ERR_ChargeurPresentation3=You will miss some pages.
+ERR_ChargeurPresentation4=The component
+ERR_ChargeurPresentation5=is publishable component. The file
+ERR_ChargeurPresentation6=should exist.
+
+# Verification titles
+TITREVERIF_NOM_LIBRE=Component name unused
+TITREVERIF_NOMS_UNIQUES=Component names uniqueness
+
+# Verification errors
+MSGERR_NOM_EXISTANT=A component with this name already exists
+
+# Tree
+nomDefinitionDefaut=New Process
+Interface_Requise=Required interface
+Interface_Fournie=Provided interface
+Composant=Component
+LienRecherche=Search
+TitreRecherche=Search
+Comp_Present=>>
+
+# Noms des onglets
+Processus=Process
+Referentiel=project
+
+#aide sur les onglets
+Processus_courant=Curent process
+Referentiel=project
+
+#popups menu
+Proprietes=Properties
+Renommer=Rename
+Ajouter_Composant=Add the component to the diagram
+Ajouter_Composant_DP=Add an existing component
+Ajouter_Composant_DP2=Add component to process
+Actualiser_Composant_DP2=Update the composant
+Ajouter_Composant_Ref=Add component to project
+Ajouter_Presentation_Ref=Add presentation package to project
+Retirer_Composant_Ref=Remove component from project
+Exporter_PNG=Export to PNG
+Exporter_JPEG=Export to JPEG
+Imprimer=Print diagram
+Selectionner_Tout=Select all
+Selectionner_Comp=Select component
+Ajouter_Composant_Vide_DP=Add an empty component
+Ajouter_produit_entree=Add required interface
+Ajouter_produit_sortie=Add provided interface
+Enregistrer_Interface=Save the interfaces as...
+Ajouter_produit=Add a product to this interface
+Modifier_Couleur=Change background color
+Ajouter_Paquetage_DP=Add a presentation package
+Supprimer_Element=Delete element
+Supprimer_Produit=Delete product
+Supprimer_Lien=Remove link product
+Supprimer_Composant=Remove component
+Afficher_Produit=Display hidden products
+Renommer_Composant=Rename component
+Retirer_DP_Ref=Remove process from project
+Retirer_Pres_Ref=Remove presentation package from project
+Actualiser_Pres_Ref=Update presentation package
+Proprietes_Pres_Ref=Package propertie
+Creer_DP=Create new process
+Ouvrir_DP=Open this process
+Proprietes_Composant=Component properties
+Proprietes_PAQ=Package properties
+Changer_Image=Change the picture
+Pas_Image=There is no picture in this project
+Changer_Image_comp=Change the component's picture
+Changer_Image_prod=Change the product's picture
+
+#Fenetre Propriete
+Proprietes_DP=Processus properties
+Proprietes_Generales_DP=General properties
+Nom_DP=Processus name :
+Auteur_DP=Author name :
+Commentaire_DP=Comments :
+Pied_Page_DP=Footer :
+Dossier_Generation=Website generation directory
+Proprietes_Generation_DP=Website generation
+Parcourir=Browse
+E_mail_DP=Author E-mail :
+Creer_DP=Create new process
+
+#Fenetre creer scenario
+Propriete_Scenario=Scenario properties
+Renommer_Scenario=Rename this scenario
+Ajouter_Scenario=Add a new scenario
+FCreer_scenario=Create one scenario
+Nom_scen=*Scenario name :
+Commentaire_scen= Comment :
+Auteur_scen=*Author name :
+E_mail_scen=*Author E-mail :
+Champs_obligatoires_scen=*Required entries
+M_nomscenario_scen=This new scenario needs a name.
+M_nomauteur_scen=You have to enter an author name for this scenario.
+M_emailauteur_scen=You have to enter author E-mail.
+M_emailinvalide_scen=Author E-mail is invalid.
+M_creer_scen_titre=Wrong data entry
+M_repGen_scen=You have to enter a website generation path
+new_author_scen=Author
+new_dp_scen=New Scenario
+Supprimer_Scenario=Remove this scenario
+
+#Fenetre Propriete Composant
+Proprietes_COMPOSANT=Component properties
+Responsable=Person in charge :   
+Mail=E-mail  :  
+Version=Version :   
+
+#fenetre edition
+Selection=Selection
+Lien=Link
+Note=Note
+AutoLien=Auto link
+MonterLien=Go up the selected link
+DescendreLien=Go down the selected link
+VersDroiteComp=Move right the component
+VersGaucheComp=Move left the component
+Passer_Statique=Display the static diagram
+Passer_Dynamique=Display the diagrams dynamics 
+
+#Fenetre version composant
+FCreer_version=New Version
+Nom_vers=Composant Version
+M_creer_ver_nom= The referentiel hadn't a name !
+
+#Fenetre choix referentiel
+Choix_projet=Choose one project
+Charger_proj=Load a saved project
+Creer_proj=Create a new project
+Fichier_ref=Project files (*.xml)
+
+#Fenetre choix processus
+Choix_processus= Choose one process
+Charger_proc=Load a saved process
+Creer_proc=Create a new process
+Fichier_apes=Process files (*.apes)
+
+#Fenetre creer processus
+FCreer_processus=Create one process
+Nom_proc=*Process name :
+Commentaire_proc=Comment :
+Auteur_proc=*Author name :
+E_mail_proc=*Author E-mail :
+Champs_obligatoires=*Required entries
+new_author=Author
+new_dp=New Process
+M_nomprocessus=This new process needs a name.
+M_nomauteur=You have to enter an author name for this process.
+M_emailauteur=You have to enter author E-mail.
+M_emailinvalide=Author E-mail is invalid.
+M_creer_proc_titre=Wrong data entry
+M_repGen=You have to enter a website generation path
+
+#Création de la racine de l'arbre
+components=Components
+processus=Processus 
+presentation=Presentations
+scenarios=Scenarios
+scenariosProc=Scenarios' processus : 
+
+#Fenetre creation lien dynamique
+new_link=New link
+ok=Ok
+cancel=Cancel
+define=Define
+not_define= Not define
+set_text=Enter your text
+no_icon=No icon available
+
+#Fenetre propriete note
+Proprietes_Note=Edit the note
+Couleur_Note=Background color
+Contenu_Note=Note content
+Proprietes_Note_BD=Note properties
+
+#Fenetre lister processus
+FLister_processus=Choose one process
+Liste_processus=Existing process list
+
+#Fenetre creer referentiel
+FCreer_referentiel= Create a new project
+Nom_ref= Project name
+
+M_creer_ref_nom= The new project has no name !
+M_ref_existe= A project with this name already exists.
+
+#Fenetre generer site
+titre_generer_site=Site generation options
+rep_site=Site directory :
+serveur_ftp=Ftp server name :
+transfert_ftp=Transfer by FTP
+style_pages=Web pages style :
+branche_objet="Object" branch
+ajouter_referentiel=Add
+retirer_referentiel=Remove
+generer=Generate
+parcourir=Browse...
+repertoire_cadre=Directory
+transfert_cadre=Ftp Transfert
+style_cadre=Site style
+options_gen_cadre=generation options
+compo_menu_cadre=Menu Composition
+titre_choix_rep=Choose a directory
+options_comp=Components
+options_def=Work definitions
+comp_tableau=Table (roles, products and work definitions)
+comp_diag_flots=Work definitions floods chart
+comp_diag_resp=Responsabilities chart
+def_tableau=Table listing activities
+def_activites=Activities chart
+def_produits=Products floods chart
+couleur_surlign=Color of selected elements in the tree :
+choix_couleur=Color choice
+
+#barre de progression pour la generation du site
+generation_en_cours=Site generation...
+creation_rep=Creating directories
+creation_index=Indexing web site
+creation_pages=Generating HTML pages
+traitement_paquetage=Presentation package processing :
+traitement_comp=Component processing
+creation_page_acc=Creating welcome page
+creation_menu=Creating menu
+extraction_icone=Icons and contents extraction
+recup_prod_exterieurs=Getting external products
+construct_arbre=Building the generation tree
+
+#barre de progression pour les chargements
+Initialisation_chargement=Starting to load
+Component_charge=Component.xml loaded
+SAX_initialisation=SAX initialisation
+interfaces_parsing=Parsing interfaces
+Interfaces_charge=Interfaces.xml loaded
+Presentation_charge=Presentation.xml loaded
+presentation_parsing=Parsing presentation file
+component_succes=Component successfully loaded
+liste_proprietes=Properties loaded
+liste_composants=Component list Ok
+liste_produitsfusion=Fusion products Ok
+liste_notes=Notes Ok
+liste_figures=Diagram figures list Ok
+liste_elements=Diagram elements list Ok
+liste_liens=Links between components list Ok
+dp_succes=Process definition successfully loaded
+paquetage_succes=Presentation package successfully loaded
+dp_trouve=XML file found
+creation_parseur=Creating parser
+recupere_donnees=Loading data...
+
+#statistiques generation
+NB_COMPOSANTS=Number of component pages : \t\t
+NB_ROLES=Number of role pages : \t\t
+NB_PRODUITS=Number of product pages : \t\t
+NB_ACTIVITES=Number of activity pages : \t\t
+NB_GUIDE=Number of guide pages : \t \t
+NB_DEFS_TRAVAIL=Number of work definition pages : \t
+NB_DIAGRAMMES=Number of diagram pages : \t\t
+NB_GUIDES=Number of guide pages : \t\t
+NB_PAQ_PRESENT=Number of presentation package pages : \t
+NB_PAQ=Number of package pages : \t\t
+NB_ELEM_PRESENT=Number of presentation element pages : \t
+NB_ACCUEIL=Number of home pages : \t\t
+NB_PAGES_TOTAL=Total number of pages : \t\t
+
+#panneau de verification
+Produits_entree_non_lies=Unlinked incoming workproducts
+Produits_sortie_non_lies=Unlinked outgoing workproducts
+Composants_non_lies=Component with unresolved interface
+Cacher=Hide
+Vider=Clear
+
+#site web
+WEB_DIAG_ASM=Process component assembly diagram
+WEB_MAIL=Click here to submit a comment about this page
+WEB_DATE_GEN=Generation date of website :
+WEB_PROD_ENTREE=Incoming workproducts :
+WEB_PROD_SORTIE=Outgoing workproducts :
+WEB_ROLE_RESP=Role in charge :
+WEB_ROLE_ASSIST=Role assistant :
+WEB_ROLES=Roles :
+WEB_PRODUITS=Workproducts :
+WEB_GUIDES=Associated Guidances :
+WEB_GUIDE=Guidances :
+WEB_DEFINITIONS=Work Definitions :
+WEB_ACTIVITES=Activities :
+WEB_ACTIVITES_ASSIST=Activities assistance :
+WEB_LINK=Link :
+WEB_ENTREE_ACT=Required for these activities :
+WEB_SORTIE_ACT=Provided by these activities :
+WEB_STATS=Website statistics
+WEB_RECAP=Summary
+WEB_ROLES_RECAP=Roles
+WEB_PRODUITS_RECAP=Products
+WEB_ACTIVITES_RECAP=Activities
+WEB_GUIDE_RECAP=Guidances
+WEB_LINK_DIAG_ACTIVITE=Display the activity diagram
+WEB_LINK_DIAG_FLOT_PROD=Display the flow diagram
+WEB_DATE_VER_COMP=Production date of component
+WEB_SCENARIO=scenario
+WEB_COMMENTAIRE_SCENARIO=Comments :
+
+#Boite de proprietes
+couleur_fond_diagramme=Diagram's background color
+Choix_langue=Choose a language :
+Choix_couleur_fond=Choose a background color :
+
+#propos
+propos_texte=\n  This program is a free software.
+propos_texte2=\n  You can redistribute it and/or modify it under terms of the GNU General Public License
+propos_texte3=\n  as published by the Free Software Foundation, either version 2 of the License, or any later version.  \n
+informationsTitle=Informations
+auteursTitle=Authors
+librairiesTitle=Libraries
+licencesTitle=Licenses
+etudiants_texte1=Participants in the creation and the evolution of this tool for assembly of components of process
+etudiants_texte2=\n  and publication of process.
+colonne_nom=Name
+colonne_contact=Contact
+colonne_role=Role
+chefProjet=Head of projet
+architecte=Architect
+specialiste_outil=Tools specialist
+ing_processus=Process Engineer 
+analyste_dev=Analyst
+label_librairie=This is the list of different libraries used in IEPP.
+colonne_lib_nom=Name
+colonne_lib_expl=Explication
+lib_avalon=Library for PDF generation
+lib_batik=Library for PDF generation
+lib_fop=Library for PDF generation
+lib_tidy=Library for PDF generation
+lib_jimi=Library for PDF generation
+lib_jgraph=Library for graphics preview and layout
+lib_jsx=Library for the serialization
+lib_lucene=Library for search engine
+lib_jdom=Library for xml
+lib_ostermillerutils=Library to open the generated Web site in the default system browser
+
+#Preferences
+GeneralTitleDesc=General parameters
+GenerationTitleDesc=Web site generation parameters
+RepositoryTitleDesc=Project parameters
+DPTitleDesc=General properties of the current process
+GeneralTitle=General
+GenerationTitle=Generation
+RepositoryTitle=Project
+LanguageTitle=Language
+CheminReferentiel=Default path :
+ReferentielDefaut=Loaded project on startup :
+RepComposantDefaut=Default path of incoming component :
+RepPaquetageDefaut=Default path of incoming presentation package :
+DiagramTitle=Diagram
+PlaceContenu=In generated pages, content is placed
+ContenuAvant=Before diagram
+ContenuApres=After diagram
+PageOuverteDT=The page that opened when clicking on a work definition is :
+OuvertureDiagFlots=Flow diagram's page
+OuvertureDiagActivites=Activities diagram's page
+OuvertureDiagComposant=Component diagram's page
+PageOuverteDA=The page that opened when clicking on a component of diagram's assemblage is :
+OuvertureDiagFlots2=Flow diagram's page
+OuvertureDefTravail=Component diagram's page
+Propriete_DPTitle=Process properties
+Propriete_DP=Process
+Propriete_DP_Desc=Description
+ContenuDP=Associated content file
+Generation_DP_Desc=Generation options
+ContenuTitle=Content & Order
+Generation_GO_Desc=Generate
+titre_choix_ref=Choose a project
+Info-bulle=Tooltip text on diagrams
+Info-bulle_activite=Tooltip text showing responsable of an activity \n on activities diagrams
+Stats=Generate website statistics
+Recap=Insert a summary (roles, products, activities,guide)
+DefaultExportDirectoryTitle=DefaultExport directory
+CheminRepertoireExportDefaut=Default export directory :
+RoleTitle=Roles grouping
+RoleRacineArbre=Set of roles
+RoleSuppression=Delete
+RoleVersSuperRole=Go to the role main description
+RoleListeSousRole=List of associated roles
+ResponsableTitle=Responsible
+MailTitle=Contact
+VersionTitle=Version
+
+#Messages 2Xmi
+2xmiAPropos=2Xmi is a library wich offers export (configurable) functionnalities
+2xmiNoJAR=2Xmi library not found
+2xmiError=An error occured while loading 2Xmi
+exportXmiOk=Xmi export successful
+exportXmiNok=Xmi export unsuccessful
+exportXmi=XMI export
+exportCompleteOk=Complete exportation is successful
+exportComplete=Complete Export
+exportSimpleOk=Simple exportation is successful
+exportSimple=Simple Export
+exportPDFOk=PDF export successful
+generation_PDF_en_cours=Pdf generation...
+Generation_PDF_Erreurs=PDF export successful.\nSome content files are wrong .\nThey are not in the generated file.
+Generation_PDF_Erreur_Fatale=PDF export failed.\nClic on Details for more informations.
+XMINotValidTitle=XMI not valid
+XMINotValid=XMI file is NOT valid. You can try again with components more recent or contact developers.
+architectureXMLNotValid=File XMI does not have a correct XML architecture. This can be du to a crash during generation.
+ValidationNotStart=The validation did not start perhaps because of faulty library or bad input files
+
+#Tests d'integrite
+Integrite_Nouveau= has been addicted to the component
+Integrite_Nouveau2= . By default, it has been put in the  left high corner of the window.
+Integrite_Produit=The product 
+Integrite_Produit_Manquant= is missing.
+Integrite_ProduitFusion_Manquant= is missing. It took place in a fusion product.
+Integrite_Composant=The component 
+Integrite_Composant_Manquant= hasn't been found in the project.
+Integrite_Paquetage=The presentation package 

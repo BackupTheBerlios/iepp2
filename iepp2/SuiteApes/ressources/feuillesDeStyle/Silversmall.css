@@ -1,0 +1,122 @@
+td.titrePage
+{
+	background-color:#006699;
+	border-style:solid;
+	border-color:black;
+	color:white
+}
+
+body {
+	background: #b7babe;
+	scrollbar-base-color: #6c8fba; 
+	scrollbar-arrow-color: #fff788;
+	scrollbar-highlight-color: #000000; 
+	scrollbar-track-color: #6699cc;
+	scrollbar-3dlight-color: #000000; 
+	scrollbar-shadow-color: #000000;
+	scrollbar-darkshadow-color: #6699cc;
+	font-family: "arial", "helvetica", sans-serif;
+	font-size: 10pt;
+}
+
+h1
+{
+	font-family: "arial", "helvetica", sans-serif;
+	font-size: 14pt;
+	color: white
+}
+
+.titreprocessus
+{
+	font-family: "arial", "helvetica", sans-serif;
+	font-size: 20pt;
+	color: white;
+}
+
+.entete
+{
+	font-family: "arial", "helvetica", sans-serif;
+	font-size: 16pt;
+	color: white;
+}
+
+
+.link_home
+{
+	font-family: "arial", "helvetica", sans-serif;
+	font-size: 8pt;
+}
+
+.imgdiagramme
+{
+	margin-top:20px;
+	margin-bottom:5px;
+  	border-color:red;
+}
+
+.titreliste
+{
+	padding-right: 5px;
+	margin-top: 5px;
+	padding-left: 5px;
+	font-weight: 700;
+	font-size: 10pt;
+	margin-bottom: 2px;
+	padding-bottom: 5px; 
+	text-transform: uppercase;
+	border-left: #69c 2px solid;
+	padding-top: 5px;
+	border-bottom: #69c 2px solid;
+	font-style: normal;
+	background-color: #b7babe;
+	margin-right: 25%;
+}
+
+.elementliste
+{
+	padding-left: 20px;
+	margin-left: 130px;
+	border-left: #69c 2px solid;
+}
+
+hr
+{
+	background-color: #006699;
+	width:84%;
+	height: 3px;
+	margin-bottom:4px;
+	margin-top:4px;
+}
+	
+
+a         
+{
+	text-decoration:underline;
+	color: blue;
+}
+a:hover
+{
+	text-decoration:none;
+	color: #006699;
+}
+
+.navigation_barre
+{
+	background-color:#b0b6be;
+	border-bottom: #69c 1px solid;
+	margin-bottom: 20px;
+	padding-bottom: 2px;
+}
+
+th
+{
+	font-size: 7pt;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+td
+{
+	font-family: "arial", "helvetica", sans-serif;
+	font-size: 9pt;
+}

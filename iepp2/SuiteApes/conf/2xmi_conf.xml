@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<toxmi_conf>
+  <outil  name="iepp">
+    <exportation  name="xmi">
+      <transformation  fichierSource=""  fichierXsl="ressources/fichiersXml/2xmi.xsl"  fichierDestination="">      </transformation>
+    </exportation>
+    <exportation  name="pdf">
+      <transformation  fichierSource=""  fichierXsl="ressources/fichiersXml/2xmiFO.xsl"  fichierDestination="">      </transformation>
+    </exportation>
+  </outil>
+</toxmi_conf>
