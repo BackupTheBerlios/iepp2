@@ -628,6 +628,18 @@ public class EnregistreurDP
 		if (roles.getChildren().size()>0) {
 			generation.addContent(roles);
 		}
+		
+		// On sauve les propriétés
+		Element CommentaireDP = new Element("CommentaireDP");
+		CommentaireDP.setText(Application.getApplication().getProjet().getDefProc().getCommentaires().replace("'", "#27"));
+		generation.addContent(CommentaireDP);
+		Element ContenuDesc = new Element("ContenuDesc");
+		ContenuDesc.setText(Application.getApplication().getProjet().getDefProc().getFichierContenu().replace("'", "#27"));
+		generation.addContent(ContenuDesc);
+		Element PiedPageDP = new Element("PiedPageDP");
+		PiedPageDP.setText(Application.getApplication().getProjet().getDefProc().getPiedPage().replace("'", "#27"));
+		generation.addContent(PiedPageDP);
+		
 		return generation;
 	}
 	

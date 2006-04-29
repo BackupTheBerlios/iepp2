@@ -55,6 +55,7 @@ import java.util.zip.ZipInputStream;
 
 import javax.swing.JOptionPane;
 
+import org.jdom.Element;
 import org.jgraph.graph.ConnectionSet;
 import org.jgraph.graph.DefaultPort;
 import org.jgraph.graph.GraphConstants;
@@ -197,6 +198,9 @@ public class ChargeurDP extends MonitoredTaskBase
 			// on s'occupe des roles
 			chargerRoles();
 			this.dp.setListeAssociationSRole(this.rolegen);
+			
+			// on s'occupe des propriétés de génération
+			chargerProprietesGeneration();
 			
 			this.print(Application.getApplication().getTraduction("dp_succes"));
 			
@@ -1071,5 +1075,18 @@ public class ChargeurDP extends MonitoredTaskBase
 			return;
 		}
 		this.rolegen.put(iorole1, iorole2);
+	}
+	
+	private void chargerProprietesGeneration() {
+	    String rep;
+	    
+	    rep = xp.valeur(document, "//generation/CommentaireDP").replace("#27", "'");
+	    this.dp.setCommentaires(rep);
+	    
+	    rep = xp.valeur(document, "//generation/ContenuDesc").replace("#27", "'");
+	    this.dp.setFicContenu(rep);
+	    
+	    rep = xp.valeur(document, "//generation/PiedPageDP").replace("#27", "'");
+	    this.dp.setPiedPage(rep);
 	}
 }

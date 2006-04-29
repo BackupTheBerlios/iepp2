@@ -167,7 +167,7 @@ public class PanneauDPDescription extends PanneauOption
 		{
 		    sCommentaireDP.setText(this.defProc.getCommentaires());
 		    sContenuDesc.setText(this.defProc.getFichierContenu());
-                    sPiedPageDP.setText(this.defProc.getPiedPage());
+		    sPiedPageDP.setText(this.defProc.getPiedPage());
 		}
 	}
 
